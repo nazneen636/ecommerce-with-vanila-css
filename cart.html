@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an e-commerce website developer by Nazneen Nahar Rima">
+    <title>Document</title>
+    <!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&family=Montserrat:wght@300;400&family=Poppins:ital,wght@0,500;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav tag starts here -->
+    <i class="fas fa-bars fa-2x menu-icon"></i>
+    <nav id="menu" class="nav-upper hidden">
+        <ul class="menu-lists flex-space_around">
+            <li class="menu_list"><a href="index.html" class="menu_list_link">Home</a></li>
+            <li class="menu_list"><a href="register.html" class="menu_list_link">Register</a></li>
+            <li class="menu_list"><a href="login.html" class="menu_list_link">Login</a></li>
+            <li class="menu_list"><a href="index.html" class="menu_list_link">Logout</a></li>
+            <li class="menu_list"><a href="contact.html" class="menu_list_link">Contact</a></li>
+            <li class="menu_list"><img src="Image/rima.jpg" alt="Profile" class="profile_img"></li>
+        </ul>
+    </nav>
+
+    <nav class="nav_lower">
+        <ul class="menu-lists flex-space_around">
+            <li class="menu_list"><a href="index.html" class="menu_list_link nav_brand">Anis Express</a></li>
+            <li class="menu_list"><a href="cart.html" class="menu_list_link cart_description">
+                <span><i class="fa-solid fa-cart-shopping cart_icon"></i></span>
+            Cart 2 products $124.40</a></li>
+        </ul>
+    </nav>
+     <!-- nav tag ends here -->
+    <!-- main starts here -->
+    <div class="cart flex-center">
+        <div class="cart-items flex-colum">
+            <div class="cart-items_heading card">
+                <h2 class="">Shopping Cart [2 items]</h2>
+                <div class="cart-items_heading_actions flex-space_around">
+                    <label for="select"><input type="checkbox" name="select" id="select">Select all items</label>
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    <button class="btn">Shop More</button>
+                </div>
+            </div>
+            
+            <div class="cart-items card flex-center">
+                <input type="checkbox" class="card_input">
+                <img src="Image/c-d-x-PDX_a_82obo-unsplash.jpg" alt="product-1" class="cart-items_img">
+                <div class="cart-items_description flex-column">
+                    <h3 class="cart-items_name">Sony V4 Headphone</h3>
+                    <h4 class="cart-items_price">Price: $225.55</h4>
+                    <p class="cart-items_shipping">Free Shipping</p>
+                </div>
+                <div class="cart-items_actions flex-column">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    <div class="add-minus">
+                        <button class="btn"><i class="fas fa-add"></i></button>
+                        <span>2</span>
+                        <button class="btn"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-items card flex-center">
+                <input type="checkbox">
+                <img src="Image/tab-4066426_1280.png" alt="product-2" class="cart-items_img">
+                <div class="cart-items_description flex-column">
+                    <h3 class="cart-items_name">Samsung 19F Pro</h3>
+                    <h4 class="cart-items_price">Price: $999.55</h4>
+                    <p class="cart-items_shipping">Shipping Cost $2.00</p>
+                </div>
+                <div class="cart-items_actions flex-column">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    <div class="add-minus">
+                        <button class="btn"><i class="fas fa-add"></i></button>
+                        <span>2</span>
+                        <button class="btn"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-payment flex-column">
+            <div class="cart-payment_summary card flex-column">
+                <h2>Payment Summary</h2>
+                <div class="summary_description flex-space_around">
+                    <p>subtotal</p>
+                    <p>$341.44</p>
+                </div>
+                <div class="summary_description flex-space_around">
+                    <p>shipping cost</p>
+                    <p>$2.50</p>
+                </div>
+                <div class="summary_description flex-space_around">
+                    <p>Total Cost</p>
+                    <p>$344.44</p>
+                </div>
+                <buttoon class="btn cart-payment_btn">Pay Now</buttoon>
+            </div>
+            <div class="cart-payment_methods card">
+                <h2>Payment Methods</h2>
+                <div>
+                    <i class="fa-brands fa-cc-visa fa-3x"></i>
+                    <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                    <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                    <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                    <i class="fa-brands fa-cc-amex fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- main ends here -->
+
+     <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an e-commerce website developer by Nazneen Nahar Rima">
+    <title>Document</title>
+    <!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&family=Montserrat:wght@300;400&family=Poppins:ital,wght@0,500;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav tag starts here -->
+    <nav><i class="fas fa-bars fa-2x menu-icon"></i>
+        <div id="menu" class="nav-upper hidden">
+            <ul class="menu-lists flex-space_around">
+                <li class="menu_list"><a href="index.html" class="menu_list_link">Home</a></li>
+                <li class="menu_list"><a href="register.html" class="menu_list_link">Register</a></li>
+                <li class="menu_list"><a href="login.html" class="menu_list_link">Login</a></li>
+                <li class="menu_list"><a href="index.html" class="menu_list_link">Logout</a></li>
+                <li class="menu_list"><a href="contact.html" class="menu_list_link">Contact</a></li>
+                <li class="menu_list"><img src="Image/rima.jpg" alt="Profile" class="profile_img"></li>
+            </ul>
+        </div>
+    
+        <div class="nav_lower">
+            <ul class="menu-lists flex-space_around">
+                <li class="menu_list"><a href="index.html" class="menu_list_link nav_brand">Anis Express</a></li>
+                <li class="menu_list"><a href="cart.html" class="menu_list_link cart_description">
+                    <span><i class="fa-solid fa-cart-shopping cart_icon"></i></span>
+                Cart 2 products $124.40</a></li>
+            </ul>
+        </div>
+    </nav>
+     <!-- nav tag ends here -->
+     <!-- header starts here -->
+     <header class="header">
+        <div class="banner flex-space_around">
+            <marquee behavior="" direction="" class="banner_title">50% discount going on every sales</marquee>
+        </div>
+        <div class="banner_features flex-center">
+            <article class="feature flex-center">
+                <i class="fa-solid fa-truck feature_icon"></i>
+                <h3 class="feature_heading">Shipping within 7 days</h3>
+            </article>
+            <article class="feature flex-center">
+                <i class="fa-brands fa-rocketchat feature_icon"></i>
+                <h3 class="feature_heading">Support 24/7 hours</h3>
+            </article>
+            <article class="feature flex-center">
+                <i class="fa-regular fa-credit-card feature_icon"></i>
+                <h3 class="feature_heading">Safe Payment</h3>
+            </article>
+        </div>
+     </header>
+     <!-- header ends here -->
+    <!-- main starts here -->
+    <main id="main" class="main">
+        <div class="sidebar ">
+            <div class="category_section flex-column">
+                <h3 class="category_section_heading">Categories</h3>
+                <ul class="lists">
+                    <li class="list_item flex-column">
+                        <label for="phone">
+                            <input type="checkbox" id="phone" value="phone">
+                        Phone</label>
+                        <label for="watch">
+                            <input type="checkbox" id="watch" value="watch">
+                        Watch</label>
+                        <label for="television">
+                            <input type="checkbox" id="television" value="television">
+                        Television</label>
+                        <label for="laptop">
+                            <input type="checkbox" id="laptop" value="laptop">
+                        Laptop</label>
+                        <label for="headphone">
+                            <input type="checkbox" id="headphone" value="headphone">
+                        Headphone</label>
+                        <label for="tablet">
+                            <input type="checkbox" id="tablet" value="tablet">
+                        Tablet</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="price_section">
+                <h3 class="category_section_heading">Price Range</h3>
+                <ul class="lists">
+                    <li class="list_item flex-column">
+                        <label for="price-1">
+                            <input type="checkbox" id="price-1" value="[0,20]">
+                        $0-$20</label>
+
+                        <label for="price-2">
+                            <input type="checkbox" id="price-2" value="[0,20]">
+                        $21-$50</label>
+
+                        <label for="price-3">
+                            <input type="checkbox" id="price-3" value="[0,20]">
+                       $51-$200 </label>
+
+                        <label for="price-4">
+                            <input type="checkbox" id="price-4" value="[0,20]">
+                        $201-$500</label>
+
+                        <label for="price-5">
+                            <input type="checkbox" id="price-5" value="[0,20]">
+                        $501-$1000</label>
+
+                        <label for="price-6">
+                            <input type="checkbox" id="price-6" value="[0,20]">
+                        $1000+</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="shipping_section">
+                <h3 class="category_section_heading">Shipping-option</h3>
+                <ul class="lists">
+                    <li class="list_item flex-column">
+                        <label for="free">
+                            <input type="radio" id="free" value="free">
+                        Free</label>
+
+                        <label for="paid">
+                            <input type="radio" id="paid" value="paid">
+                        Paid</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- main_content -->
+        <div class="main_content">
+            <!-- 1st section -->
+            <section class="action flex-space_around">
+                 <div class="sort">
+                    <label for="action-sort">Sort by</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rated first</option>
+                        <option value="price">Most cheapest first</option>
+                        <option value="arrival">New arrival first</option>
+                        <option value="discount">Biggest first</option>
+                    </select>
+                 </div>
+                 <div class="action-search">
+                    <input type="search" name="search" id="search" placeholder="Search your products">
+                    <button class="btn search_btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                 </div>
+            </section>
+            <!-- 2nd section -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="Image/c-d-x-PDX_a_82obo-unsplash.jpg" alt="product-1" class="product_img">
+                    <div class="product_content flex-column">
+                        <h3 class="product_name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot black"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. maxime rem voluptates, praesentium iure architecto ratione ipsum mollitia.
+                        <a href="product/porduct.html" class="learn_more">..Learn More</a>
+                        </p>
+                        <h4 class="product_price">Price: $225.20</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn Product_cart_btn">ADD to CART</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="Image/amir-hanna-sweUF7FcyP4-unsplash.jpg" alt="" class="product_img">
+                    <div class="product_content flex-column">
+                        <h3 class="product_name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot black"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. maxime rem voluptates, praesentium iure architecto ratione ipsum mollitia.
+                        <a href="product/porduct.html" class="learn_more">..Learn More</a>
+                        </p>
+                        <h4 class="product_price">Price: $225.20</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn Product_cart_btn">ADD to CART</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="Image/kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="" class="product_img">
+                    <div class="product_content flex-column">
+                        <h3 class="product_name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot black"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. maxime rem voluptates, praesentium iure architecto ratione ipsum mollitia.
+                        <a href="product/porduct.html" class="learn_more">..Learn More</a>
+                        </p>
+                        <h4 class="product_price">Price: $225.20</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn Product_cart_btn">ADD to CART</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="Image/c-d-x-PDX_a_82obo-unsplash.jpg" alt="product-1" class="product_img">
+                    <div class="product_content flex-column">
+                        <h3 class="product_name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot black"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. maxime rem voluptates, praesentium iure architecto ratione ipsum mollitia.
+                        <a href="product/porduct.html" class="learn_more">..Learn More</a>
+                        </p>
+                        <h4 class="product_price">Price: $225.20</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn Product_cart_btn">ADD to CART</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="Image/amir-hanna-sweUF7FcyP4-unsplash.jpg" alt="" class="product_img">
+                    <div class="product_content flex-column">
+                        <h3 class="product_name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot black"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. maxime rem voluptates, praesentium iure architecto ratione ipsum mollitia voluptatum hic nostrum tempora.
+                        <a href="index.html" class="learn_more">..Learn More</a>
+                        </p>
+                        <h4 class="product_price">Price: $225.20</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn Product_cart_btn">ADD to CART</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="Image/tab-4066426_1280.png" alt="" class="product_img">
+                    <div class="product_content flex-column">
+                        <h3 class="product_name">Sony i-phone tablets</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot black"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. maxime rem voluptates, praesentium iure architecto ratione ipsum mollitia voluptatum hic nostrum.
+                        <a href="index.html" class="learn_more">..Learn More</a>
+                        </p>
+                        <h4 class="product_price">Price: $225.20</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn Product_cart_btn">ADD to CART</button>
+                    </div>
+                </article>
+            </section>
+            <!-- pagination section -->
+            <section class="pagination">
+                <button class="pagination_btn"><i class="fas- fa-less-than"></i></button>
+                <button class="pagination_btn">1</button>
+                <button class="pagination_btn">2</button>
+                <button class="pagination_btn">3</button>
+                <button class="pagination_btn">4</button>
+                <button class="pagination_btn">5</button>
+                <button class="pagination_btn">6</button>
+                <button class="pagination_btn">7</button>
+                <button class="pagination_btn">8</button>
+                <button class="pagination_btn">9</button>
+                <button class="pagination_btn">10</button>
+                <button class="pagination_btn">...</button>
+                <button class="pagination_btn"><i class="fas- fa-greater-than"></i></button>
+            </section>
+    </main>
+    <!-- main ends here -->
+    <!-- footer starts here -->
+    <footer id="footer" class="flex-space_around">
+        <div class="subscribe">
+            <label for="subscribe">Subscribe for</label>
+            <input type="email" id="subscribe" placeholder="Your email address">
+            <button class="btn subscribe_btn">Submit</button>
+        </div>
+        <div class="footer_content">
+            <p class="footer_description">&copy; Copyright by Nazneen Nahar Rima. All right reserved</p>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+
+     <script src="index.js"></script>
+</body>
+</html>
